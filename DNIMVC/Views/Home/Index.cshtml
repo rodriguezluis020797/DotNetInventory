@@ -1,8 +1,94 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="hero">
+    <div class="hero-eyebrow">ASP.NET Core 10 MVC — Demo Project</div>
+    <h1 class="hero-title">Inventory Tracking,<br>Built in Public</h1>
+    <p class="hero-sub">
+        A fully documented demo application covering authentication, role-based access,
+        REST APIs, and CRUD operations — built with .NET 10 MVC and SQL Server.
+    </p>
+    <div class="hero-actions">
+        <a class="btn btn-primary disabled" aria-disabled="true">Sign In</a>
+        <a href="https://github.com/rodriguezluis020797/DotNetInventory" target="_blank" class="btn btn-secondary">View
+            on GitHub</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+            </div>
+            <h3 class="feature-title">JWT Authentication</h3>
+            <p class="feature-desc">
+                Stateless auth using ASP.NET Core Identity, JWT access tokens,
+                and rotating refresh tokens stored in SQL Server.
+            </p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+            </div>
+            <h3 class="feature-title">Role-Based Access</h3>
+            <p class="feature-desc">
+                Fine-grained authorization with admin, manager, and viewer roles
+                controlling access to routes and UI elements.
+            </p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+            </div>
+            <h3 class="feature-title">REST API</h3>
+            <p class="feature-desc">
+                Dedicated API controllers alongside MVC views,
+                secured with JWT Bearer authentication.
+            </p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+            </div>
+            <h3 class="feature-title">EF Core & SQL Server</h3>
+            <p class="feature-desc">
+                Code-first migrations, Fluent API configuration,
+                and a clean separation between identity and application data.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="blog-cta">
+    <div class="blog-cta-inner">
+        <div>
+            <h2 class="blog-cta-title">Every decision documented</h2>
+            <p class="blog-cta-desc">
+                This project is built alongside a blog series that explains the reasoning
+                behind every architectural choice — not just the code.
+            </p>
+        </div>
+        <a href="https://luis-rodriguez.hashnode.dev" target="_blank" class="btn btn-primary">Read the blog</a>
+    </div>
+</section>
